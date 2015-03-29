@@ -10,7 +10,7 @@ using Glovebox.Netduino.Drivers;
 
 namespace Glovebox.Netduino.Sensors {
     public class SensorTemp : SensorBase {
-        const uint temperatureCacheSeconds = 60 * 10;
+        const uint temperatureCacheSeconds = 10;
 
         DS18B20 ds = null;
         DateTime nextTemperatureReading = DateTime.MinValue;
